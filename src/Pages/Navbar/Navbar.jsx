@@ -6,7 +6,7 @@ const Navbar = () => {
      const Navlinks =<>
      <li><NavLink to={"/"}>Home</NavLink></li>
      <li><NavLink to={"/updateprofile"}>Update Profile</NavLink></li>
-     <li><NavLink to={"/userprofile"}>User Profile</NavLink></li>
+     <li><NavLink to={"/login"}>Log in</NavLink></li>
      </>
      return (
           <div className="navbar bg-base-100">

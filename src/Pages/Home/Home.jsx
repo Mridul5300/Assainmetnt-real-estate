@@ -50,12 +50,12 @@ const Home = () => {
       </Swiper>
     </div>
   <div>
-  <div className="space-y-2 text-center">
+  <div className="space-y-2 text-center mt-8">
 			<h2 className="text-3xl font-bold">House Details</h2>
 			<p className="font-serif text-sm dark:text-gray-600">Qualisque erroribus usu at, duo te agam soluta mucius.</p>
 		</div>
   </div>
-   <div className="grid grid-cols-1 mx-14  md:grid-cols-1 lg:grid-cols-2"> 
+   <div className="grid grid-cols-1 mx-14 gap-6 md:grid-cols-1 lg:grid-cols-2"> 
      {
           estate.map(statecard => <Estate key={statecard.id} statecard={statecard}></Estate>)
      }

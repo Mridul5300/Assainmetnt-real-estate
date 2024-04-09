@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Root/Root";
 import Home from "../Pages/Home/Home";
 import Updateprofile from "../Pages/Update Profile/Updateprofile";
-import Userprofile from "../Pages/User profile/Userprofile";
 import Error from "../Pages/Error/Error";
+import LogIn from "../Pages/Home/Log In/LogIn";
 
 
 const router = createBrowserRouter([
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
         element:<Updateprofile></Updateprofile>
       },
       {
-        path:"/userprofile",
-        element:<Userprofile></Userprofile>
+        path:"/login",
+        element:<LogIn></LogIn>
       }
     ]
   },
