@@ -1,0 +1,100 @@
+[
+     {
+       "id": 1,
+       "estate_title": "Modern City Apartment",
+       "segment_name": "Apartments",
+       "description": "Stylish and modern apartment located in the heart of the city. Close to amenities and public transportation.",
+       "price": 300000,
+       "status": "Rent",
+       "area": "1000 sq ft",
+       "location": "Downtown, New York City",
+       "facilities": ["living room", "kitchen", "balcony"],
+       "imageURL": "https://example.com/city-apartment.jpg"
+     },
+     {
+       "id": 2,
+       "estate_title": "Luxury Beach House",
+       "segment_name": "Single-family homes",
+       "description": "Beautiful beachfront property with panoramic ocean views. Perfect for relaxation and entertainment.",
+       "price": 1500000,
+       "status": "sale",
+       "area": "3500 sq ft",
+       "location": "Malibu, California",
+       "facilities": ["swimming pool", "beach access", "garden"],
+       "imageURL": "https://example.com/beach-house.jpg"
+     },
+     {
+       "id": 3,
+       "estate_title": "Cozy Mountain Cabin",
+       "segment_name": "Farmhouses",
+       "description": "Quaint mountain cabin nestled in the woods. Ideal for nature lovers and outdoor enthusiasts.",
+       "price": 250000,
+       "status": "Rent",
+       "area": "1500 sq ft",
+       "location": "Smokey Mountains, Tennessee",
+       "facilities": ["fireplace", "deck", "forest view"],
+       "imageURL": "https://example.com/mountain-cabin.jpg"
+     },
+     {
+       "id": 4,
+       "estate_title": "Spacious Townhouse",
+       "segment_name": "Townhouses",
+       "description": "Spacious townhouse with modern amenities. Close to schools, parks, and shopping centers.",
+       "price": 400000,
+       "status": "sale",
+       "area": "2000 sq ft",
+       "location": "Suburban, Chicago",
+       "facilities": ["garage", "backyard", "finished basement"],
+       "imageURL": "https://example.com/townhouse.jpg"
+     },
+     {
+       "id": 5,
+       "estate_title": "Student Housing Complex",
+       "segment_name": "Student housing",
+       "description": "Purpose-built student housing complex offering comfortable living spaces and convenient access to campus.",
+       "price": 1200000,
+       "status": "Rent",
+       "area": "5000 sq ft",
+       "location": "University District, Boston",
+       "facilities": ["study area", "fitness center", "game room"],
+       "imageURL": "https://example.com/student-housing.jpg"
+     },
+     {
+       "id": 6,
+       "estate_title": "Senior Living Community",
+       "segment_name": "Senior living communities",
+       "description": "Senior living community designed for active retirees. Amenities include clubhouse, pool, and walking trails.",
+       "price": 800000,
+       "status": "Rent",
+       "area": "3000 sq ft",
+       "location": "Retirement Village, Florida",
+       "facilities": ["clubhouse", "swimming pool", "walking trails"],
+       "imageURL": "https://example.com/senior-living.jpg"
+     },
+     {
+       "id": 7,
+       "estate_title": "Modern City Loft",
+       "segment_name": "Apartments",
+       "description": "Sleek and modern loft apartment with industrial-chic design. Located in a vibrant neighborhood with trendy cafes and galleries.",
+       "price": 500000,
+       "status": "sale",
+       "area": "1200 sq ft",
+       "location": "Arts District, Los Angeles",
+       "facilities": ["open floor plan", "exposed brick", "rooftop terrace"],
+       "imageURL": "https://example.com/city-loft.jpg"
+     },
+     {
+       "id": 8,
+       "estate_title": "Elegant Mansion",
+       "segment_name": "Single-family homes",
+       "description": "Grand mansion with luxurious finishes and sprawling grounds. Perfect for hosting lavish events and gatherings.",
+       "price": 5000000,
+       "status": "Rent",
+       "area": "10000 sq ft",
+       "location": "Bel Air, California",
+       "facilities": ["ballroom", "tennis court", "home theater"],
+       "imageURL": "https://example.com/mansion.jpg"
+     }
+    
+   ]
+   
