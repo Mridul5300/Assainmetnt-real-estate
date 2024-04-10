@@ -52,14 +52,14 @@ const LogIn = () => {
           {...register("Password", { required: true })}
           />
           {errors.Password && <span className='text-red-400'>This field is required</span>}
+          <div className="form-control mt-6">
+          <button className="btn btn-primary">Login</button>
+        </div>
           <label className="label">
-          <p className="mx-5 mb-2">New hear,please complete<Link to={"/register"}>
-         <button className="btn btn-link">Registation</button>
+          <p className="mx-5 mb-2">New here?  <Link to={"/register"}>
+         <button className="btn btn-link">create an account</button>
          </Link></p>
           </label>
-        </div>
-        <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
         </div>
       </form>
     </div>
@@ -70,4 +70,3 @@ const LogIn = () => {
 };
 
 export default LogIn;
-;
