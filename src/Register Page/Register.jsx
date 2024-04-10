@@ -13,11 +13,15 @@ const Register = () => {
      const {
           register,
           handleSubmit,
-          watch,
+          
           formState: { errors },
         } = useForm()
         const onSubmit = data => {
-          console.log(data)
+          const {email,Password}=data
+          creatUser(email,Password)
+          .then(result => {
+               console.log(result);
+          })
      };
      return (
           <div>
@@ -64,14 +68,16 @@ const Register = () => {
                                               {...register("Password", { required: true })} 
                                              />
                                              {errors.Password && <span className='text-red-400'>This field is required</span>}
+
+                                             <div className="form-control mt-4">
+                                             <button className="btn btn-primary">Register</button>
+                                        </div>
+
                                              <label className="label">
                                              <p className="mx-5 mb-2">Have an acount?<Link to={"/login"}>
                                               <button className="btn btn-link">Please Log In</button>
                                              </Link></p>
                                              </label>
-                                        </div>
-                                        <div className="form-control mt-6">
-                                             <button className="btn btn-primary">Register</button>
                                         </div>
                                    </form>
                                    
