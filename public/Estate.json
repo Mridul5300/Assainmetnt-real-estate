@@ -9,19 +9,19 @@
        "area": "1000 sq ft",
        "location": "Downtown, New York City",
        "facilities": ["living room", "kitchen", "balcony"],
-       "imageURL": "https://example.com/city-apartment.jpg"
+       "imageURL": "https://i.ibb.co/3rSB1k9/unsplash-imge-4.jpg"
      },
      {
        "id": 2,
        "estate_title": "Luxury Beach House",
-       "segment_name": "Single-family homes",
+       "segment_name": "Banglow",
        "description": "Beautiful beachfront property with panoramic ocean views. Perfect for relaxation and entertainment.",
        "price": 1500000,
        "status": "sale",
        "area": "3500 sq ft",
        "location": "Malibu, California",
        "facilities": ["swimming pool", "beach access", "garden"],
-       "imageURL": "https://example.com/beach-house.jpg"
+       "imageURL": "https://i.ibb.co/bd7d4h4/unsplash-imge-1.jpg"
      },
      {
        "id": 3,
@@ -33,7 +33,7 @@
        "area": "1500 sq ft",
        "location": "Smokey Mountains, Tennessee",
        "facilities": ["fireplace", "deck", "forest view"],
-       "imageURL": "https://example.com/mountain-cabin.jpg"
+       "imageURL": "https://i.ibb.co/VNkBMXx/unsplash-imge-2.jpg"
      },
      {
        "id": 4,
@@ -45,7 +45,7 @@
        "area": "2000 sq ft",
        "location": "Suburban, Chicago",
        "facilities": ["garage", "backyard", "finished basement"],
-       "imageURL": "https://example.com/townhouse.jpg"
+       "imageURL": "https://i.ibb.co/0Qwhw3f/unsplash-imge-7.jpg"
      },
      {
        "id": 5,
@@ -57,19 +57,19 @@
        "area": "5000 sq ft",
        "location": "University District, Boston",
        "facilities": ["study area", "fitness center", "game room"],
-       "imageURL": "https://example.com/student-housing.jpg"
+       "imageURL": "https://i.ibb.co/0MW2mGR/unsplash-imge-8.jpg"
      },
      {
        "id": 6,
        "estate_title": "Senior Living Community",
-       "segment_name": "Senior living communities",
+       "segment_name": "Senior living Community Quarters",
        "description": "Senior living community designed for active retirees. Amenities include clubhouse, pool, and walking trails.",
        "price": 800000,
        "status": "Rent",
        "area": "3000 sq ft",
        "location": "Retirement Village, Florida",
        "facilities": ["clubhouse", "swimming pool", "walking trails"],
-       "imageURL": "https://example.com/senior-living.jpg"
+       "imageURL": "https://i.ibb.co/bKGTX9W/unsplash-imge-6.jpg"
      },
      {
        "id": 7,
@@ -81,7 +81,7 @@
        "area": "1200 sq ft",
        "location": "Arts District, Los Angeles",
        "facilities": ["open floor plan", "exposed brick", "rooftop terrace"],
-       "imageURL": "https://example.com/city-loft.jpg"
+       "imageURL": "https://i.ibb.co/bg1SQv8/unsplash-imge-5.jpg"
      },
      {
        "id": 8,
@@ -93,7 +93,7 @@
        "area": "10000 sq ft",
        "location": "Bel Air, California",
        "facilities": ["ballroom", "tennis court", "home theater"],
-       "imageURL": "https://example.com/mansion.jpg"
+       "imageURL": "https://i.ibb.co/zZZvzfn/unsplash-imge-3.jpg"
      }
     
    ]
