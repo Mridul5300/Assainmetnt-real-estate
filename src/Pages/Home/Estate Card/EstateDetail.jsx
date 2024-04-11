@@ -1,9 +1,24 @@
-
+import { useLoaderData, useParams } from "react-router-dom";
 
 const EstateDetail = () => {
+
+     const estate = useLoaderData();
+     const { id } = useParams();
+     const idint = parseInt(id)
+     const cards = estate.find(cards => cards.id == idint)
+     console.log(cards);
      return (
           <div>
-               
+               <div className="card lg:card-side bg-base-100 shadow-xl mb-4 mt-2">
+                    <figure><img src={cards.imageURL} alt="" /></figure>
+                    <div className="card-body">
+                         <h2 className="card-title">New album is released!</h2>
+                         <p>{}</p>
+                         <div className="card-actions justify-end">
+                              <button className="btn btn-primary">Order</button>
+                         </div>
+                    </div>
+               </div>
           </div>
      );
 };
