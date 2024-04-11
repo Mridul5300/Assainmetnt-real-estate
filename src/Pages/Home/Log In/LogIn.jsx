@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContex } from "../../../Auth Provider/AuthProvider";
 import { useForm } from "react-hook-form";
+import Googlelogin from "../../../scoial login/Googlelogin";
+import GithubLogin from "../../../scoial login/GithubLogin";
 
 
 const LogIn = () => {
@@ -62,9 +64,12 @@ const LogIn = () => {
           </label>
         </div>
       </form>
+      <Googlelogin></Googlelogin>
+        <GithubLogin></GithubLogin>
     </div>
   </div>
 </div>
+
           </div>
      );
 };

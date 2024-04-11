@@ -9,11 +9,12 @@ const EstateDetail = () => {
      console.log(cards);
      return (
           <div>
-               <div className="card lg:card-side bg-base-100 shadow-xl mb-4 mt-2">
-                    <figure><img src={cards.imageURL} alt="" /></figure>
+               <div className="card lg:card-side  bg-base-100 shadow-xl mb-4 mt-2">
+                    <figure className="w-80"><img src={cards.imageURL} alt="" /></figure>
                     <div className="card-body">
-                         <h2 className="card-title">New album is released!</h2>
-                         <p>{}</p>
+                         <h2 className="card-title text-3xl">{cards.segment_name}</h2>
+                         <p>{cards.description}</p>
+                         <p>Price: {cards.price}</p>
                          <div className="card-actions justify-end">
                               <button className="btn btn-primary">Order</button>
                          </div>
