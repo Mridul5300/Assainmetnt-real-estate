@@ -6,7 +6,7 @@ const EstateDetail = () => {
      const { id } = useParams();
      const idint = parseInt(id)
      const cards = estate.find(cards => cards.id == idint)
-     console.log(cards);
+     // console.log(cards);
      return (
           <div>
                <div className="card lg:card-side  bg-base-100 shadow-xl mb-4 mt-2">

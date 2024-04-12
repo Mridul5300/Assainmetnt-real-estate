@@ -6,6 +6,7 @@ import Error from "../Pages/Error/Error";
 import LogIn from "../Pages/Home/Log In/LogIn";
 import Register from "../Register Page/Register";
 import EstateDetail from "../Pages/Home/Estate Card/EstateDetail";
+import PrivetRoute from "./PrivetRoute";
 
 
 const router = createBrowserRouter([
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/updateprofile",
-        element:<Updateprofile></Updateprofile>
+        element:<PrivetRoute><Updateprofile></Updateprofile></PrivetRoute>
       },
       {
         path:"/login",
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/estate/:id',
-        element:<EstateDetail></EstateDetail>,
+        element:<PrivetRoute><EstateDetail></EstateDetail></PrivetRoute>,
         loader:() => fetch('../Estate.json')
         
       }

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContex } from "../../../Auth Provider/AuthProvider";
 import { useForm } from "react-hook-form";
 import Googlelogin from "../../../scoial login/Googlelogin";
@@ -9,7 +9,9 @@ import GithubLogin from "../../../scoial login/GithubLogin";
 const LogIn = () => {
 
   const {signInUser}= useContext(AuthContex)
-
+ const location = useLocation();
+ const navigate = useNavigate();
+ console.log("your location",location);
 
        
   const {
@@ -23,6 +25,10 @@ const LogIn = () => {
     signInUser(email,Password)
     .then(result => {
          console.log(result.user);
+
+      
+        // navigate after login 
+        navigate(location?.state ? location.state : "/");
     })
     .catch(error => {
       console.log(error);

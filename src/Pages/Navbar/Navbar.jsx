@@ -8,9 +8,9 @@ const Navbar = () => {
      const { logout, user } = useContext(AuthContex)
 
      const Navlinks = <>
-          <li><NavLink to={"/"}>Home</NavLink></li>
-          <li><NavLink to={"/updateprofile"}>Update Profile</NavLink></li>
-          <li><NavLink to={"/login"}>Log in</NavLink></li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/updateprofile">Update Profile</NavLink></li>
+          <li><NavLink to="/login">Log in</NavLink></li>
      </>
      return (
           <div className="navbar border-b-4 mt-3 bg-base-100">
@@ -30,32 +30,57 @@ const Navbar = () => {
                          {Navlinks}
                     </ul>
                </div>
-               <div className="navbar-end">
-                    {
-
-                         user ? <div className="dropdown dropdown-end">
+               {/* <div className="navbar-end">
+                         
                               <label tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                    <div className="w-10 rounded-full">
-                                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                   <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                                    </div>
                               </label>
-                              <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+
+                              <ul tabIndex={0} className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"> 
                                    <li>
                                         <button className="btn btn-sm btn-ghost">
                                              Mridul
                                         </button>
                                    </li>
-                                   <li>
-                                        <button
-                                             onClick={logout}
-                                             className="btn btn-sm btn-ghost">
-                                             Logout
-                                        </button>
-                                   </li>
-                              </ul>
-                         </div> :
-                              <Link to={'/login'}>
-                                   <button className="btn btn-sm">Log In </button>
+                                   {        
+                                     user ?
+                                   <button
+                                        onClick={logout}
+                                        className="btn btn-sm btn-ghost bg-emerald-300">
+                                        Log out
+                                   </button>:
+                                   <Link to={'/login'}>
+                              <button className="btn btn-sm  bg-emerald-300">Log In </button>
+                         </Link>
+                              }
+                               </ul>
+                         </div> */}
+               <div className="navbar-end">
+
+                    {
+                         user ? <div className="dropdown dropdown-end flex justify-center items-center gap-2">
+                              <label tabIndex={0} className="btn btn-ghost btn-circle avatar hover:ring-2  hover:ring-green-500">
+                                   <div className="w-10 rounded-full">
+                                        <img src={user?.photoURL || "https://i.ibb.co/fYRGNg6/profile.jpg"}
+
+                                             title={(user?.displayName) || 'Name not found'}
+                                             alt="User avatar"
+                                        />
+
+                                   </div>
+                              </label>
+
+                              <button onClick={logout} className="font-medium text-white text-lg md:text-xl md:pb-2 md:px-4 py-1 px-2 rounded-lg bg-primary text-center">
+                                   Logout
+                              </button>
+
+
+                         </div>
+                              :
+                              <Link to='/login'>
+                                   <button className="font-medium text-white text-lg md:text-xl md:pb-2 md:px-4 py-1 px-2 rounded-lg bg-primary text-center">Login</button>
                               </Link>
                     }
                </div>
