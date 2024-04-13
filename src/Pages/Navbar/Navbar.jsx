@@ -23,51 +23,24 @@ const Navbar = () => {
                               {Navlinks}
                          </ul>
                     </div>
-                    <Link to={"/"} className="btn btn-ghost text-xl">daisyUI</Link>
+                    <Link to={"/"} className="btn btn-ghost text-xl">NTR</Link>
                </div>
                <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                          {Navlinks}
                     </ul>
-               </div>
-               {/* <div className="navbar-end">
-                         
-                              <label tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                   <div className="w-10 rounded-full">
-                                   <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                                   </div>
-                              </label>
-
-                              <ul tabIndex={0} className="mt-3 z-[10] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"> 
-                                   <li>
-                                        <button className="btn btn-sm btn-ghost">
-                                             Mridul
-                                        </button>
-                                   </li>
-                                   {        
-                                     user ?
-                                   <button
-                                        onClick={logout}
-                                        className="btn btn-sm btn-ghost bg-emerald-300">
-                                        Log out
-                                   </button>:
-                                   <Link to={'/login'}>
-                              <button className="btn btn-sm  bg-emerald-300">Log In </button>
-                         </Link>
-                              }
-                               </ul>
-                         </div> */}
+               </div>     
                <div className="navbar-end">
 
                     {
                          user ? <div className="dropdown dropdown-end flex justify-center items-center gap-2">
                               <label tabIndex={0} className="btn btn-ghost btn-circle avatar hover:ring-2  hover:ring-green-500">
                                    <div className="w-10 rounded-full">
-                                        <img src={user?.photoURL || "https://i.ibb.co/fYRGNg6/profile.jpg"}
+                                   <img src={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
 
-                                             title={(user?.displayName) || 'Name not found'}
-                                             alt="User avatar"
-                                        />
+                                        title={(user?.displayName || user.email) || 'Name not found'}
+                                        alt="Tailwind CSS Navbar component" 
+                                   />
 
                                    </div>
                               </label>

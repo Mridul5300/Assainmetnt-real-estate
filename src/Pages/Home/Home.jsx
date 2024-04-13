@@ -8,9 +8,10 @@ import 'swiper/css/navigation';
 import "./style/style.css"
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import Estate from './Estate';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -36,7 +37,7 @@ const Home = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay]}
         
       >
         <SwiperSlide><img  src="https://i.ibb.co/hgjG824/2150761034.jpg" alt="" /></SwiperSlide>
@@ -49,8 +50,13 @@ const Home = () => {
         
       </Swiper>
     </div>
+    <div  className="p-6  m-4  border-b-8 border-b-green-200 rounded-b-3xl h-1/3  bg-opacity-0 left-1/2  space-y-6 w-2/3 sm:px-10 sm:mx-12 lg:rounded-xl bg-blue-300 backdrop-blur-md absolute z-10 transform -translate-x-1/2 -translate-y-1/2  flex flex-col items-center">
+                <h1 data-aos="zoom-in" className="text-4xl font-bold ">Find Your Dream Home</h1>
+
+                <p className="text-lg text- ">Welcome to our premier real estate platform! Whether you are looking for a cozy apartment in the heart of the city, a spacious family home in the suburbs</p>
+        </div>        
   <div>
-  <div className="space-y-2 text-center mt-8">
+  <div className="space-y-2 text-center mt-44">
 			<h2 className="text-3xl font-bold">House Details</h2>
 			<p className="font-serif text-sm dark:text-gray-600">Qualisque erroribus usu at, duo te agam soluta mucius.</p>
 		</div>
