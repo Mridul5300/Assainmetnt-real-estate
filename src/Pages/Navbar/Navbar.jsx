@@ -38,10 +38,10 @@ const Navbar = () => {
                                    <div className="w-10 rounded-full">
                                    <img src={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"}
 
-                                        title={(user?.displayName || user.email) || 'Name not found'}
+                                        title={(user?.displayName ) || 'Name not found'}
                                         alt="Tailwind CSS Navbar component" 
                                    />
-
+                                         <p className="text-white">{user.email || 'Email not found'}</p>
                                    </div>
                               </label>
 

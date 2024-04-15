@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContex } from "../../Auth Provider/AuthProvider";
 import {  useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Updateprofile = () => {
      const {upDateUser,user, setReload}=useContext(AuthContex) 
@@ -43,6 +44,10 @@ const handleSubmit = (e) => {
 }
      return (
           <div>
+            <Helmet>
+        <title>NTR|UpdateProfile
+        </title>
+      </Helmet>
                <div className='flex flex-col justify-center items-center mb-12'>
 
 
