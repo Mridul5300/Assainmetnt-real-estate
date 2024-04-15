@@ -7,6 +7,7 @@ import LogIn from "../Pages/Home/Log In/LogIn";
 import Register from "../Register Page/Register";
 import EstateDetail from "../Pages/Home/Estate Card/EstateDetail";
 import PrivetRoute from "./PrivetRoute";
+import Servicess from "../ExtraRoute/Servicess";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
         element:<PrivetRoute><EstateDetail></EstateDetail></PrivetRoute>,
         loader:() => fetch('../Estate.json')
         
+      },
+
+      {
+        path:"/service",
+        element:<Servicess></Servicess>
       }
     
     ]

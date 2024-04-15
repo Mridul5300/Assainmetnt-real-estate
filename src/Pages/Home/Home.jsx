@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div>
        <Helmet>
-        <title>NTR | Home
+        <title>Home
         </title>
       </Helmet>
     <div className='mt-8'>
@@ -38,8 +38,8 @@ const Home = () => {
         modules={[Autoplay]}
         
       >
-        <SwiperSlide><img  src="https://i.ibb.co/hgjG824/2150761034.jpg" alt="" /></SwiperSlide>
-        <SwiperSlide><img src="https://i.ibb.co/dphchmx/grant-lemons-j-TCLppdw-SEc-unsplash.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img  src="https://i.ibb.co/ZgFxK10/webaliser-TPTXZd9m-Oo-unsplash.jpg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="https://i.ibb.co/RbHr7R0/todd-kent-178j8t-Jr-Nlc-unsplash.jpg" alt="" /></SwiperSlide>
         <SwiperSlide><img src="https://i.ibb.co/W5DbQh9/frames-for-your-heart-2d4l-AQAlb-DA-unsplash.jpg" alt="" /></SwiperSlide>
         <SwiperSlide><img src="https://i.ibb.co/SQmnpTK/avi-werde-h-Hz4yrvxwl-A-unsplash.jpg" alt="" /></SwiperSlide>
         <SwiperSlide><img src="https://i.ibb.co/6YZykjz/2151264468.jpg" alt="" /></SwiperSlide>
@@ -56,6 +56,10 @@ const Home = () => {
           {estate.map(statecard => <Estate key={statecard.id} statecard={statecard}></Estate>)}
         </div>
       </div>
+        <div className=''>
+        <h2 className="text-3x"></h2>
+        </div>
+
       </div>
   );
 };

@@ -3,42 +3,37 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Estate = ({ statecard }) => {
-     const {id, estate_title,imageURL } = statecard
+     const { id, estate_title, imageURL, price, status, area, facilities } = statecard
      return (
           <div data-aos="fade-up"
                data-aos-anchor-placement="center-bottom">
-               <section className=" mt-5 mb-6 dark:bg-gray-100 dark:text-gray-800">
-                    <div className="  ">
-                         <div className='border p-4  shadow-2xl '>
-                              <article className="flex flex-col dark:bg-gray-50">
-                                   <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                                        <img alt="" className="object-cover w-full h-60 dark:bg-gray-500" src={imageURL} />
-                                   </a>
-                                   <div className="flex flex-col flex-1">
-                                        <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                                        <a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Convenire</a>
-                                        <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">{estate_title}</h3>
-                                        <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-                                             <span>June 1, 2020</span>
-                                             <span>2.1K views</span>
-                                        </div>
-                                   </div>
-                                   <div className='mt-5 mb-2'>
-                                        <Link to={`/estate/${id}`} className="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group">
-                                             <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-                                             <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-                                             <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                                             <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-                                             <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-                                             <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Button Text</span>
-                                        </Link>
-                                   </div>
-                              </article>
+                 <section className="mt-5 mb-6 dark:bg-gray-100 dark:text-gray-800">
+      <div className="border p-4 shadow-xl rounded-lg">
+        <div className="relative">
+          <img alt="" className="object-cover w-full h-60 rounded-t-lg" src={imageURL} />
+          <span className="absolute top-0 right-0 px-3 py-1 bg-red-400 text-white rounded-bl-lg"> {status} </span>
+        </div>
+        <div className="flex flex-col justify-between h-full py-4">
+          <h3 className="text-lg font-semibold mb-2">{estate_title}</h3>
+          <div className="flex flex-wrap justify-between mb-4">
+            <span className="bg-green-300 rounded-md p-2 flex items-center"><strong>Price:</strong> {price}</span>
+            <span className="bg-green-300 rounded-md p-2 flex items-center"><strong>Area:</strong> {area}</span>
+          </div>
+     
+               <hr />
+          
 
-
-                         </div>
-                    </div>
-               </section>
+          <ul className="mb-4">
+            {facilities.map((facility, idx) => <li key={idx}>{facility}</li>)}
+          </ul>
+          <div className='mt-auto'>
+            <Link to={`/estate/${id}`} className="block w-full px-5 py-3 text-center text-gray-100 bg-gray-700 rounded-lg shadow-md hover:bg-gray-800 transition-colors duration-300">
+              View Property
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
           </div>
 
 

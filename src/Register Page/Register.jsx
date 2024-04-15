@@ -5,6 +5,7 @@ import { AuthContex } from '../Auth Provider/AuthProvider';
 import { useForm } from 'react-hook-form';
 import toast, { Toaster } from 'react-hot-toast';
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import { Helmet } from 'react-helmet-async';
 
 
 const Register = () => {
@@ -54,9 +55,14 @@ const Register = () => {
     }, [registrationSuccess, navigate]);
 
     return (
-        <div className="max-w-6xl mx-auto min-h-screen bg-cover bg-center mt-2 mb-2" style={{ backgroundImage: `url('https://i.ibb.co/r69QCFZ/mylene-tremoyet-Da0pd-Ceke-Us-unsplash.jpg')` }}>
+        <div>
+                <Helmet>
+        <title>Registation
+        </title>
+      </Helmet>
+        <div className="max-w-6xl mx-auto min-h-screen bg-cover bg-center mt-2 mb-2" style={{ backgroundImage: `url('https://i.ibb.co/8mZWB8m/jeremy-bishop-1bra-Zy-Sl-EKA-unsplash.jpg')` }}>
             <div className="max-w-screen-md mx-auto p-8">
-                <h1 className=" font-bold text-5xl text-center mb-8">Register Now</h1>
+                <h1 className=" font-bold text-5xl text-center text-amber-500 mb-8">Register Now</h1>
                 <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-md mx-auto">
                     <div className="mb-4">
                         <label className="block text-sm font-boldtext text-yellow-300 mb-1" htmlFor="fullName">Full Name</label>
@@ -95,10 +101,11 @@ const Register = () => {
                         <button className="btn btn-primary w-full">Register</button>
                     </div>
                 </form>
-                <p className=" text-red-500   text-xl text-center">Already have an account? <Link to="/login" className="btn-link text-red-500 text-xl">Log in</Link></p>
+                <p className=" text-red-300   text-xl text-center">Already have an account? <Link to="/login" className="btn-link text-red-300 text-xl">Log in</Link></p>
                 {/* {error && <span className='text-red-400 block mt-4'>{error}</span>} */}
             </div>
             <Toaster />
+        </div>
         </div>
     );
 };
