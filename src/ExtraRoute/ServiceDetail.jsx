@@ -7,7 +7,7 @@ const ServiceDetail =({servicecard}) => {
      return (
           <div>
                  <Helmet>
-        <title>Home
+        <title>Service
         </title>
       </Helmet>
 <div className="max-w-xs p-6 mt-4 mb-3 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">

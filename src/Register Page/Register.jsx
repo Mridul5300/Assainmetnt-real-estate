@@ -21,7 +21,7 @@ const Register = () => {
            setError(""); // Clear previous error
         const { email, Password } = data;
         if (Password.length < 6) {
-            setError("password should ")
+            setError("password should be 6 character ")
             return
         }
         if (!/[a-z]/.test(Password)) {
