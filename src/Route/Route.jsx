@@ -8,6 +8,7 @@ import Register from "../Register Page/Register";
 import EstateDetail from "../Pages/Home/Estate Card/EstateDetail";
 import PrivetRoute from "./PrivetRoute";
 import Servicess from "../ExtraRoute/Servicess";
+import Contact from "../ExtraRoute/Contact";
 
 
 const router = createBrowserRouter([
@@ -41,9 +42,12 @@ const router = createBrowserRouter([
 
       {
         path:"/service",
-        element:<Servicess></Servicess>
+        element:<PrivetRoute><Servicess></Servicess></PrivetRoute>
+      },
+      {
+        path:"/contact",
+        element:<PrivetRoute><Contact></Contact></PrivetRoute>
       }
-    
     ]
   },
 ]);

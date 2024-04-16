@@ -7,13 +7,16 @@ const Navbar = () => {
 
      const { logout, user } = useContext(AuthContex)
 
-     const Navlinks = <>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/updateprofile">Update Profile</NavLink></li>
-          <li><NavLink to="/login">Log in</NavLink></li>
-          <li><NavLink to="/service">Service</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-     </>
+     const Navlinks = (
+          <ul className="flex items-center space-x-4">
+            <li><NavLink to="/" className=" hover:text-blue-800">Home</NavLink></li>
+            <li><NavLink to="/service" className=" hover:text-blue-800">Service</NavLink></li>
+            <li><NavLink to="/updateprofile" className=" hover:text-blue-800">Update Profile</NavLink></li>
+            <li><NavLink to="/login" className=" hover:text-blue-800">Log in</NavLink></li>
+            <li><NavLink to="/contact" className=" hover:text-blue-800">Contact</NavLink></li>
+          </ul>
+        );
+        
      return (
           // <div className="navbar border-b-4 mt-3 bg-base-100">
           //      <div className="navbar-start">
