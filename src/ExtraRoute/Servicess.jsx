@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ServiceDetail from "./ServiceDetail";
+import { Helmet } from "react-helmet-async";
 
 const Servicess = () => {
      const [services, setServices] = useState([])
@@ -11,6 +12,10 @@ const Servicess = () => {
      },[])
      return (
           <div>
+                 <Helmet>
+        <title>service
+        </title>
+      </Helmet>
                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6">
           {
 

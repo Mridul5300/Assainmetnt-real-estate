@@ -1,8 +1,12 @@
+import { HiOutlineHomeModern } from "react-icons/hi2";
 
 
 const Footer = () => {
      return (
           <footer className="footer p-10 bg-neutral text-neutral-content">
+            <span className="flex items-center">
+                              <span className="text-orange-400 text-xl ml-2 font-bold">Estate</span> <HiOutlineHomeModern className="text-3xl text-gray-700 bg-orange-300" /> <span className="text-xl font-semibold">Elegance</span>
+                         </span>
   <nav>
     <h6 className="footer-title">Services</h6> 
     <a className="link link-hover">Branding</a>
@@ -23,6 +27,7 @@ const Footer = () => {
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
   </nav>
+
 </footer>
      );
 };
